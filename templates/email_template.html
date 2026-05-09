@@ -2,26 +2,128 @@
 <html>
 <head>
 <style>
-  body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
-  .container { background-color: #ffffff; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); max-width: 600px; margin: auto; }
-  .header { color: #333333; font-size: 24px; border-bottom: 2px solid #0056b3; padding-bottom: 10px; margin-bottom: 20px;}
-  .content { font-size: 16px; color: #555555; line-height: 1.6; }
-  .footer { margin-top: 30px; font-size: 12px; color: #999999; text-align: center; border-top: 1px solid #eeeeee; padding-top: 10px;}
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+
+  .container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 650px;
+    margin: auto;
+  }
+
+  .header {
+    text-align: center;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+  }
+
+  .header h1 {
+    color: #0056b3;
+    margin: 10px 0;
+  }
+
+  .content {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.8;
+  }
+
+  .highlight {
+    color: #0056b3;
+    font-weight: bold;
+  }
+
+  .footer {
+    margin-top: 35px;
+    font-size: 12px;
+    color: #999999;
+    text-align: center;
+    border-top: 1px solid #eeeeee;
+    padding-top: 15px;
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background-color: #0056b3;
+    color: #ffffff !important;
+    text-decoration: none;
+    border-radius: 6px;
+  }
 </style>
 </head>
+
 <body>
-  <div class="container">
-    <div class="header">Automated Email Notification</div>
-    <div class="content">
-      <p>Hello,</p>
-      <p>This is a scheduled email sent automatically by the <strong>Python Email Automation System</strong>.</p>
-      <p>This template can be customized in the <code>templates/email_template.html</code> file.</p>
-      <br>
-      <p>Best regards,<br>Your Automation Bot</p>
-    </div>
-    <div class="footer">
-      Please do not reply to this email. It is automatically generated.
-    </div>
+
+<div class="container">
+
+  <div class="header">
+
+    <!-- Logo Here -->
+    <!--
+    <img src="YOUR_LOGO_URL_HERE" width="120" alt="Company Logo">
+    -->
+
+    <h1>Star Developer</h1>
+    <p>Digital Innovation & Automation Solutions</p>
+
   </div>
+
+  <div class="content">
+
+    <p>Hello,</p>
+
+    <p>
+      We hope you are doing well.
+    </p>
+
+    <p>
+      This email was generated through our
+      <span class="highlight">Email Automation System</span>
+      developed using Python and Gmail API integration.
+    </p>
+
+    <p>
+      At <span class="highlight">Star Developer</span>, we focus on building modern digital solutions including web development, AI tools, automation systems, and business technologies.
+    </p>
+
+    <p>
+      We are also proud to collaborate with
+      <span class="highlight">DigiTech Solutions</span>
+      to deliver innovative and reliable digital services for businesses and startups.
+    </p>
+
+    <p>
+      This project demonstrates secure email automation, scheduling, logging, and professional communication workflows.
+    </p>
+
+    <p>
+      Thank you for your support and collaboration.
+    </p>
+
+    <br>
+
+    <p>
+      Best Regards,<br>
+      <strong>Yasir Awan</strong><br>
+      Star Developer Team
+    </p>
+
+  </div>
+
+  <div class="footer">
+    Please do not reply to this email. This message was generated automatically by the Email Automation System.
+  </div>
+
+</div>
+
 </body>
 </html>
