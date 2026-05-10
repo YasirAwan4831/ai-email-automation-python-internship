@@ -1,70 +1,364 @@
-# Email Automation System
+<div align="center">
 
-This is a lightweight, professional Python-based Email Automation System designed for scheduling and sending emails using the Gmail API. It maintains email history logs and provides a clean terminal-based interface.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=📧%20Email%20Automation%20System&fontSize=40&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Professional%20Python%20Email%20Automation%20with%20Gmail%20API&descAlignY=55&descSize=16" width="100%"/>
 
-## Prerequisites
+<br/>
 
-1.  **Python Installed**: Ensure you have Python 3.7+ installed. You can check by running `python --version` in your terminal.
-2.  **Google Account**: A standard Google/Gmail account to send emails from.
+<!-- STATUS BADGES -->
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Gmail API](https://img.shields.io/badge/Gmail%20API-Integrated-EA4335?style=for-the-badge&logo=gmail&logoColor=white)
+![OAuth](https://img.shields.io/badge/OAuth-2.0-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Status](https://img.shields.io/badge/Status-✅%20Working-22c55e?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-f59e0b?style=for-the-badge&logo=opensourceinitiative&logoColor=white)
+![Internship](https://img.shields.io/badge/AI%20Internship-Nest--Agent-8b5cf6?style=for-the-badge&logo=sparkles&logoColor=white)
 
-## Step 1: Install Dependencies
+<br/><br/>
 
-Open your terminal or command prompt, navigate to the project directory, and run:
+<!-- TYPING ANIMATION -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=4F8EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=60&lines=Send+%7C+Schedule+%7C+Automate+Emails+%F0%9F%9A%80;Built+with+Python+%2B+Gmail+API+%F0%9F%94%90;Secure+OAuth+2.0+Authentication+%E2%9C%85" alt="Typing SVG" />
+
+<br/><br/>
+
+<a href="#-installation"><img src="https://img.shields.io/badge/🚀%20Get%20Started-2563eb?style=for-the-badge"/></a>
+&nbsp;
+<a href="#-features"><img src="https://img.shields.io/badge/✨%20Features-7c3aed?style=for-the-badge"/></a>
+&nbsp;
+<a href="#-tech-stack"><img src="https://img.shields.io/badge/🛠️%20Tech%20Stack-0f766e?style=for-the-badge"/></a>
+
+</div>
+
+---
+
+## 🌟 Overview
+
+The **Email Automation System** is a professional Python-based automation project developed to send, schedule, and manage emails efficiently using the Gmail API.
+
+> 💡 Developed as part of an **AI Internship Project** at **Nest-Agent** — demonstrating real-world API integration, OAuth authentication, and automation workflows.
+
+<table>
+<tr>
+<td>
+
+**What it does:**
+- 📩 Gmail API Integration
+- ⏰ Email Scheduling
+- 🎨 HTML Email Templates
+- 🧾 Email Logging System
+
+</td>
+<td>
+
+**How it works:**
+- 🔐 OAuth Authentication
+- ⚙️ Automation Workflows
+- 🛡️ Secure Email Handling
+- 📂 Modular Architecture
+
+</td>
+</tr>
+</table>
+
+---
+
+## ✨ Features
+
+<div align="center">
+
+| Feature | Description | Status |
+|:-------:|:-----------|:------:|
+| 📩 Instant Sending | Send emails immediately via Gmail API | ✅ |
+| ⏰ Scheduling | Auto-deliver emails at set times | ✅ |
+| 🔐 OAuth 2.0 | Secure Google authentication, no password stored | ✅ |
+| 🧾 Logging | Full email history with timestamps | ✅ |
+| 🎨 HTML Templates | Beautiful, customizable email designs | ✅ |
+| 📂 Modular Code | Clean, maintainable project structure | ✅ |
+| ⚡ Lightweight | Fast performance, minimal dependencies | ✅ |
+| 🖥️ Terminal UI | Interactive menu-driven interface | ✅ |
+
+</div>
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-Core%20Backend-3776AB?style=flat-square&logo=python&logoColor=white)
+![Gmail API](https://img.shields.io/badge/Gmail%20API-Email%20Sending-EA4335?style=flat-square&logo=gmail&logoColor=white)
+![OAuth 2.0](https://img.shields.io/badge/OAuth%202.0-Authentication-4285F4?style=flat-square&logo=google&logoColor=white)
+![Schedule](https://img.shields.io/badge/Schedule%20Lib-Task%20Scheduling-22c55e?style=flat-square&logo=clockify&logoColor=white)
+![Dotenv](https://img.shields.io/badge/Dotenv-Env%20Variables-eab308?style=flat-square&logo=dotenv&logoColor=white)
+![HTML CSS](https://img.shields.io/badge/HTML%2FCSS-Email%20Templates-e11d48?style=flat-square&logo=html5&logoColor=white)
+
+</div>
+
+---
+
+## 📁 Project Structure
+
+```
+📦 email-automation-system/
+│
+├── 📁 logs/
+│   └── 📄 email_logs.txt          ← all sent email records
+│
+├── 📁 templates/
+│   └── 🎨 email_template.html     ← HTML email design
+│
+├── 📁 utils/                      ← helper utilities
+│
+├── 📁 .venv/                      ← virtual environment
+│
+├── 🔒 .env                        ← secrets (never commit!)
+├── ⚙️  config.py                   ← configuration settings
+├── 📧 email_service.py            ← core email logic
+├── 📝 logger.py                   ← logging system
+├── 🚀 main.py                     ← entry point
+├── ⏰ scheduler.py                ← scheduling logic
+├── 📦 requirements.txt
+├── 🔑 credentials.json            ← OAuth credentials (never commit!)
+├── 🔑 token.json                  ← OAuth token (never commit!)
+└── 📖 README.md
+```
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/email-automation-system.git
+cd email-automation-system
+```
+
+### 2️⃣ Create Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+**Activate:**
+
+```bash
+# Windows
+.\.venv\Scripts\activate
+
+# Linux / macOS
+source .venv/bin/activate
+```
+
+### 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Step 2: Configure Environment Variables
+---
 
-1. Open the `.env` file in the root of the project.
-2. Replace `your_email@gmail.com` with the Gmail address you will use to send the emails.
-   ```env
-   SENDER_EMAIL=your_actual_email@gmail.com
-   ```
+## 🔐 Gmail API Setup
 
-## Step 3: Set up Gmail API Credentials
+### Step 1 — Open Google Cloud Console
 
-This is the most important step to allow your script to send emails securely.
+👉 [https://console.cloud.google.com/](https://console.cloud.google.com/)
 
-1. Go to the [Google Cloud Console](https://console.cloud.google.com/).
-2. **Create a new Project**: Click the project dropdown at the top and select "New Project". Name it something like "Email Automation".
-3. **Enable Gmail API**:
-   - Go to "APIs & Services" -> "Library".
-   - Search for "Gmail API" and click "Enable".
-4. **Configure OAuth Consent Screen**:
-   - Go to "APIs & Services" -> "OAuth consent screen".
-   - Choose "External" and click "Create".
-   - Fill in the required fields (App name, User support email, Developer contact information). You can use your own email for these.
-   - Click "Save and Continue" through the Scopes and Test users screens (you can add your own email as a Test user).
-5. **Create Credentials**:
-   - Go to "APIs & Services" -> "Credentials".
-   - Click "Create Credentials" -> "OAuth client ID".
-   - Select "Desktop app" as the Application type.
-   - Name it (e.g., "Python Email App") and click "Create".
-6. **Download Credentials**:
-   - After creation, you will see your Client ID and Client Secret. Click the "Download JSON" button.
-   - Rename the downloaded file to `credentials.json`.
-   - **Move `credentials.json` into the root folder of this project** (`email-automation-system/`).
+### Step 2 — Create a Project
 
-## Step 4: Run the Application
+Create a new project and name it:
+```
+Email Automation System
+```
 
-Now you are ready to run the system!
+### Step 3 — Enable Gmail API
 
-1. In your terminal, run:
-   ```bash
-   python main.py
-   ```
-2. **First-time Authentication**:
-   - The first time you send an email or start the app, a browser window will open asking you to log in to your Google account.
-   - It will warn you that "Google hasn't verified this app". This is normal since you just created it. Click "Advanced" -> "Go to [Your App Name] (unsafe)".
-   - Click "Continue" to grant the app permission to "Send email on your behalf".
-   - After allowing access, you can close the browser. A `token.json` file will be created in your project folder, which keeps you logged in for future runs.
+```
+APIs & Services → Library → Gmail API → Enable
+```
 
-## Features & Usage
+### Step 4 — Configure OAuth Consent Screen
 
-When you run `python main.py`, you will see a terminal menu:
-- **Option 1**: Sends an email immediately. You can choose to use the HTML template (`templates/email_template.html`) or write plain text.
-- **Option 2**: Schedules an email. Enter the time in 24-hour format (e.g., `14:30` for 2:30 PM). 
-- **Option 3**: Starts the scheduler loop. **You must run this for scheduled emails to actually send!** It will run in the background until you press `Ctrl+C`.
-- **Logs**: All sent emails (successes and failures) are recorded in `logs/email_logs.txt`.
+```
+APIs & Services → OAuth Consent Screen
+```
+
+Configure:
+- **App Type:** External
+- **App Name:** Email Automation System
+- **Support Email:** your Gmail
+- **Test Users:** add your Gmail
+
+### Step 5 — Create OAuth Credentials
+
+```
+APIs & Services → Credentials → Create Credentials → OAuth Client ID → Desktop App
+```
+
+Download the JSON file → Rename to `credentials.json` → Place in project root.
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+# Email Configuration
+SENDER_EMAIL=your_email@gmail.com
+SENDER_PASSWORD=your_password_here
+
+# Time Zone
+TZ=UTC
+```
+
+> ⚠️ **Never commit this file to GitHub!**
+
+---
+
+## ▶️ Run The Project
+
+```bash
+python main.py
+```
+
+---
+
+## 🖥️ Application Menu
+
+```
+╔══════════════════════════════════════╗
+║     📧 Email Automation System       ║
+╠══════════════════════════════════════╣
+║  1.  Send an email immediately       ║
+║  2.  Schedule an email               ║
+║  3.  Start scheduler loop            ║
+║  4.  Exit                            ║
+╚══════════════════════════════════════╝
+```
+
+---
+
+## 🎨 HTML Email Templates
+
+Templates are stored in `templates/email_template.html`. You can customize:
+
+| Element | What to Change |
+|---------|---------------|
+| 🎨 Colors | Brand color scheme |
+| 🖼️ Logo | Company logo URL |
+| 🏢 Company Name | Header/footer text |
+| 🔘 Buttons | CTA button text & links |
+| 📐 Layout | Section arrangement |
+
+**Adding a logo:**
+```html
+<img src="YOUR_IMAGE_URL" alt="Company Logo" width="150">
+```
+
+Host images on: GitHub · ImgBB · Cloudinary · Your website
+
+---
+
+## 🧾 Logging System
+
+Every email is automatically logged in `logs/email_logs.txt`:
+
+```
+[2024-12-15 09:32:11] | TO: client@company.com | SUBJECT: Q4 Report | STATUS: ✅ SENT
+[2024-12-15 10:15:44] | TO: team@nestAgent.io  | SUBJECT: Reminder   | STATUS: ✅ SENT
+[2024-12-15 11:00:02] | TO: invalid@noDomain   | SUBJECT: Test       | STATUS: ❌ FAILED
+```
+
+---
+
+## 🔒 Security Notes
+
+> ⚠️ **Never push these files to GitHub!**
+
+```gitignore
+# Add to .gitignore
+.env
+credentials.json
+token.json
+```
+
+| File | Why It's Sensitive |
+|------|-------------------|
+| `.env` | Contains email credentials |
+| `credentials.json` | Google OAuth app secrets |
+| `token.json` | Your personal access token |
+
+---
+
+## 🧠 Authentication Flow
+
+```
+Run python main.py
+        ↓
+First run detected?
+        ↓
+Browser opens → Google OAuth Login
+        ↓
+Grant Gmail permissions
+        ↓
+token.json saved automatically
+        ↓
+✅ Ready! No re-login needed.
+```
+
+---
+
+## 🚀 Future Improvements
+
+<div align="center">
+
+| # | Feature | Priority |
+|:-:|:--------|:--------:|
+| 1 | 🖥️ GUI Interface | 🔴 High |
+| 2 | 🤖 AI Generated Emails | 🔴 High |
+| 3 | 📨 Bulk Email Sending | 🟡 Medium |
+| 4 | 📊 Email Analytics Dashboard | 🟡 Medium |
+| 5 | 📎 Attachment Support | 🟡 Medium |
+| 6 | 👥 Multi-user Support | 🟢 Low |
+| 7 | 🌐 Web Dashboard | 🟢 Low |
+
+</div>
+
+---
+
+## 🤝 Developer
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Developed%20by-Muhammad%20Yasir-4f8ef7?style=for-the-badge&logo=github"/>
+
+**Muhammad Yasir**
+AI Intern @ Nest-Agent
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/yasirawan4831/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github)](https://github.com/YasirAwan4831)
+
+</div>
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — feel free to use, modify and distribute.
+
+---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" width="100%"/>
+
+###  Thank You For Visiting This Project!
+
+⭐ **If you found this useful, please star the repository!** ⭐
+
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=yasir.email-automation-system&left_color=gray&right_color=blue)
+&nbsp;
+![Made with Love](https://img.shields.io/badge/Made%20with-YasirAwan-red?style=flat-square)
+&nbsp;
+![Nest-Agent](https://img.shields.io/badge/Nest--Agent-AI_Automation%20Internship-8b5cf6?style=flat-square)
+
+</div>
